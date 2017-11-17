@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC400</color>
+    <color name="colorPrimaryDark">#FFAB00</color>
+    <color name="colorAccent">#FFEB3B</color>
+    <color name="purple_trans">#66872C76</color>
+<color name="yellow">#FFF895</color>
+    <color name="txt_hint">#33FFFFFF</color>
+<color name="bg_card">#9E9E9E</color>
+    <color name="grey">#bfbfbf</color>
+</resources>

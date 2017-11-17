@@ -1,0 +1,83 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <data>
+        <variable
+            name="user"
+            type="com.kevinjanvier.ifix.model.Login" />
+    </data>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kevinjanvier.ifix.ui.MainFirst">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="77.87dp"
+        android:layout_height="77dp"
+        android:layout_marginLeft="@dimen/space40"
+        android:layout_marginTop="@dimen/space50"
+        android:src="@drawable/ic_logo_ifix" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/space20"
+        android:layout_marginBottom="@dimen/space40">
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="@dimen/space250"
+            android:layout_height="@dimen/space50"
+            android:layout_marginBottom="@dimen/space20"
+            android:background="@drawable/btn_white_selector"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt16" />
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="@dimen/space250"
+            android:layout_height="@dimen/space50"
+            android:layout_marginBottom="@dimen/space20"
+            android:background="@drawable/bg_btn_purple"
+            android:text="Log In"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Copyright UgShine"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt14"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_bottom"
+        android:layout_below="@id/iv_logo"
+        android:layout_margin="@dimen/space50"
+        android:text="Let Ug youth shine"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt30"
+        android:textStyle="bold" />
+</RelativeLayout>
+</layout>

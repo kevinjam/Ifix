@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/space40"
+    android:paddingLeft="@dimen/space5"
+    android:paddingRight="@dimen/space5"
+    tools:context="com.kevinjanvier.ifix.ui.fragment.AddServiceFragment">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/space40"
+                >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Request an item"
+                android:textSize="@dimen/txt20"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Category Name"
+                    android:inputType="text"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <EditText
+                android:id="@+id/message"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/curved_white"
+                android:hint="Message"
+                android:padding="10dp"
+                android:inputType="textMultiLine"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@color/grey" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space5">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_item"
+            android:background="@drawable/button_bg"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+

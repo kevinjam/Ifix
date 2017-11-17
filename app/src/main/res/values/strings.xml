@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">IFIx</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="what_doyou">What do you require?</string>
+    <string name="category_series">Categories of Series</string>
+    <string name="about_ifix">The youthful gang.co🌹         Motto : ☀Let Ug 🇺🇬 youth shine☀               stuck in traffic or at work, and you don\'t have a  way to teleport home to shut your windows ?Among other gazillion things, here is what the team consists of:- • The Booking guy:to book and deliver concert tickets, movie 🎥 tickets, travel tickets, any tickets. •The Transporter🚖🛵🚛: Pick and deliver any package from and to anywhere. •The Help🏋🏿‍♀: Avail a baby sitter or house helper for a night to look after your loved ones or touch up your office,home,hostel room and others. •The Joker🤹‍♀:Update your gallery with movies, music, documentaries, and games. •The shopper🚶🏿‍♀: Do your shopping 🛒 for you online and offline at any place of your convenience. •The liner🕴🏼: Queue for you at the bank, food court, the bar or anywhere you not able to wait for long. •The trainer🤼‍♀: Provide physical, physchogical and mental trainer at your convinience.o •Mr flex: Need anything from downtown.We are here. •The Transporter: Pick your loved ones and deliver them safely from school,the airport, the bar e.t.c •Are you unable to do this and that : The team can do anything.Parental guidance is advised.                        Think it , we can do it.                         Call : 0770949416</string>
+    <string name="add_item">Add Item</string>
+    <string name="title_activity_show_user_map">Map</string>
+</resources>
