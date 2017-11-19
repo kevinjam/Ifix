@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "481276439621",
+    "firebase_url": "https://ifix-d0fe8.firebaseio.com",
+    "project_id": "ifix-d0fe8",
+    "storage_bucket": "ifix-d0fe8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481276439621:android:a94a404a3608f39b",
+        "android_client_info": {
+          "package_name": "com.kevinjanvier.ifix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "481276439621-sc2q4ei5jnc4iho4h9r22bsc9mj7ongk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kevinjanvier.ifix",
+            "certificate_hash": "29ab148e6e715e0ebba74208aab4f2993cb9e5e4"
+          }
+        },
+        {
+          "client_id": "481276439621-60tept2clne422fq39dg033ua38joiua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgKF9w0vNRc-Os6OQaJEEl-Penz16U6cw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "481276439621-60tept2clne422fq39dg033ua38joiua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

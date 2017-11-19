@@ -11,11 +11,12 @@ import com.kevinjanvier.ifix.R
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.SearchView
+import android.util.Log
 import com.kevinjanvier.ifix.adapter.CategoryAdapter
 import com.kevinjanvier.ifix.model.Categories
 import android.widget.Toast
-
-
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 
 
 /**
@@ -31,6 +32,15 @@ class HomeFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         val view:View= inflater!!.inflate(R.layout.fragment_home, container, false)
+
+
+        // retrieve users
+        val users : FirebaseUser = FirebaseAuth.getInstance().currentUser!!
+        if (users != null){
+            val email:String = users.email!!
+
+            log("Email =----- " + email)
+        }
 
         val rowListItem:List<Categories> =getItem()
         val lLayout = GridLayoutManager(activity, 2)
@@ -79,6 +89,8 @@ class HomeFragment : Fragment() {
         return addArrayList
 
     }
-
+    fun log(msg: String) {
+        Log.e(activity.javaClass.simpleName, msg)
+    }
 
 }// Required empty public constructor

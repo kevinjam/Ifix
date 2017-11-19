@@ -15,6 +15,11 @@ class Dashboard : AppCompatActivity() {
     lateinit var viewpager: ViewPager
     lateinit var toolbar: Toolbar
 
+    private var tabIcon:IntArray = intArrayOf(R.drawable.ic_home_black_24dp,
+            R.drawable.ic_search_black_24dp,R.drawable.ic_add_circle_black_24dp,
+            R.drawable.ic_people_black_24dp,R.drawable.ic_user)
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
@@ -29,6 +34,21 @@ class Dashboard : AppCompatActivity() {
 
         tablayout = findViewById(R.id.tabs)
         tablayout.setupWithViewPager(viewpager)
+        setupIcons()
+
+
+
+
+
+
+    }
+
+    private fun setupIcons(){
+        tablayout.getTabAt(0)!!.setIcon(tabIcon[0])
+        tablayout.getTabAt(1)!!.setIcon(tabIcon[1])
+        tablayout.getTabAt(2)!!.setIcon(tabIcon[2])
+        tablayout.getTabAt(3)!!.setIcon(tabIcon[3])
+        tablayout.getTabAt(4)!!.setIcon(tabIcon[4])
 
 
     }
