@@ -14,6 +14,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.kevinjanvier.ifix.R
 import org.jetbrains.anko.alert
+import org.jetbrains.anko.indeterminateProgressDialog
 
 class Signup : AppCompatActivity() {
     lateinit var btnSignUp: Button
@@ -43,6 +44,8 @@ class Signup : AppCompatActivity() {
         goSign = findViewById(R.id.go_signin)
 
         btnSignUp.setOnClickListener {
+            val dialog = indeterminateProgressDialog(message = "Please wait…", title = "User Login")
+
 
             //            val intent = Intent(this, Dashboard::class.java)
 //            startActivity(intent)
@@ -55,11 +58,17 @@ class Signup : AppCompatActivity() {
             mAuth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener { task ->
                         if (task.isSuccessful) {
+                            dialog.dismiss()
                             log("createUserWithEmail:success")
+                            val intent = Intent(this, Login::class.java)
+                            startActivity(intent)
+
                             val user: FirebaseUser = mAuth.currentUser!!
                             log("User $user")
 
                         } else {
+                            dialog.dismiss()
+
                             alert("${task.exception}", "Registration Error") {
                                 yesButton { }
                                 noButton {}

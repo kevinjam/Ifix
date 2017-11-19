@@ -86,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/space5"
-                android:text="USERNAME"
+                android:text="EMAIL"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/txt10" />
 
@@ -95,7 +95,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
-                android:hint="Username"
+                android:hint="email"
                 android:lines="1"
                 android:text=""
                 android:textColor="@android:color/white"
