@@ -35,12 +35,6 @@ class Dashboard : AppCompatActivity() {
         tablayout = findViewById(R.id.tabs)
         tablayout.setupWithViewPager(viewpager)
         setupIcons()
-
-
-
-
-
-
     }
 
     private fun setupIcons(){

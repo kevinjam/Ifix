@@ -8,16 +8,11 @@ import android.support.v7.app.AppCompatDialog
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
-import com.google.android.gms.tasks.OnCompleteListener
-import com.google.android.gms.tasks.Task
-import com.google.firebase.auth.AuthResult
 import com.kevinjanvier.ifix.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import org.jetbrains.anko.alert
 import org.jetbrains.anko.indeterminateProgressDialog
-import org.jetbrains.anko.progressDialog
-import org.jetbrains.anko.toast
 
 
 class Login : AppCompatActivity() {
