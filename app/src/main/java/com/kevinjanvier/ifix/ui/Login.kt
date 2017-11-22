@@ -11,6 +11,8 @@ import android.widget.EditText
 import com.kevinjanvier.ifix.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import com.kevinjanvier.ifix.help.Constant
+import com.kevinjanvier.ifix.help.Utility
 import org.jetbrains.anko.alert
 import org.jetbrains.anko.indeterminateProgressDialog
 
@@ -22,10 +24,12 @@ class Login : AppCompatActivity() {
 
     lateinit var username: EditText
     lateinit var password: EditText
+    lateinit var utility:Utility
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        utility = Utility(this@Login)
 
         mAuth = FirebaseAuth.getInstance()
 
@@ -60,9 +64,11 @@ class Login : AppCompatActivity() {
                                 dialog.dismiss()
                                 log("signInWithEmail:success")
                                 val intent = Intent(this, Dashboard::class.java)
-                                startActivity(intent)
                                 val fcmUser: FirebaseUser = mAuth.currentUser!!
-                                log("User : " + fcmUser)
+                                utility.savePref(Constant.Islogin, "true")
+                                utility.savePref(Constant.email, fcmUser.email!!)
+                                log("User : " + fcmUser.email)
+                                startActivity(intent)
                             } else {
                                 dialog.dismiss()
                                 alert("${task.exception}", "Failure") {

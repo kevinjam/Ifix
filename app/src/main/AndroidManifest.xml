@@ -9,7 +9,8 @@
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,6 +18,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!--android:name=".ui.SplashScreen"-->
+
         <activity
             android:name=".ui.SplashScreen"
             android:label="@string/app_name"
@@ -33,6 +36,7 @@
         <activity android:name=".ui.Signup" />
         <activity android:name=".ui.Dashboard" />
         <activity android:name=".ui.CategoryMore" />
+        <activity android:name=".ui.demosApp.MapMarkerIfix" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -48,7 +52,12 @@
         <activity
             android:name=".ui.ShowUserMap"
             android:label="@string/title_activity_show_user_map" />
-        <activity android:name=".ui.CallUser"></activity>
+        <activity android:name=".ui.CallUser" />
+        <activity
+            android:name=".ui.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".ui.ThankYou" />
+        <activity android:name=".ui.RecyclerViewItem"></activity>
     </application>
 
 </manifest>

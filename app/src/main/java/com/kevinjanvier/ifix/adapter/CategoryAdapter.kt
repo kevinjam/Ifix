@@ -22,7 +22,8 @@ import android.graphics.BitmapFactory
 import java.io.ByteArrayOutputStream
 
 
-class CategoryAdapter(private val context: Context, private val itemList: List<Categories>) : RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
+class CategoryAdapter(private val context: Context, private val itemList: List<Categories>)
+    : RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 

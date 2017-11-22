@@ -16,4 +16,6 @@
     <dimen name="space10">10dp</dimen>
     <dimen name="txt20">20sp</dimen>
     <dimen name="space30">30dp</dimen>
+    <dimen name="space2">2dp</dimen>
+    <dimen name="space18">18dp</dimen>
 </resources>

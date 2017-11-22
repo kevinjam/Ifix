@@ -56,8 +56,12 @@ dependencies {
 //    compile 'com.google.android.gms:play-services-places:11.6.0'
     compile 'com.google.android.gms:play-services-places:11.6.0'
     compile 'com.nobrain.android.permissions:library:1.1.0'
+    compile 'com.google.maps.android:android-maps-utils:0.4.4'
 
 }
+
+
+
 
 
 
