@@ -2,7 +2,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:alpha="0.7"
-    android:background="#E65100">
+   >
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg" />
     <ImageView
         android:id="@+id/splashscreen"
         android:layout_width="150dp"

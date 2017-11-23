@@ -24,6 +24,7 @@ class CallUser : AppCompatActivity() {
     lateinit var btnCont: Button
     private lateinit var utility: Utility
     lateinit var toolbar:Toolbar
+    var phoneNumber:String?= null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,9 +50,9 @@ class CallUser : AppCompatActivity() {
 
 
         val fname = intent.extras.getString("Person")
-        val phoneNumber = intent.extras.getString("PhoneNumber")
+        phoneNumber = intent.extras.getString("PhoneNumber")
         username.text = fname
-        userPhone.text = phoneNumber
+        userPhone.text = "Telephone : $phoneNumber"
 
         buttonCall = findViewById(R.id.add_friend)
 
@@ -62,7 +63,8 @@ class CallUser : AppCompatActivity() {
 //                    Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
 //            }
 //            startActivity(callIntent)
-            onCall()
+            onCall(phoneNumber!!)
+
         }
 
         btnCont.setOnClickListener {
@@ -70,7 +72,7 @@ class CallUser : AppCompatActivity() {
         }
     }
 
-    private fun onCall() {
+    private fun onCall(phone:String) {
         val permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE)
 
         if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
@@ -79,7 +81,7 @@ class CallUser : AppCompatActivity() {
                     arrayOf(Manifest.permission.CALL_PHONE),
                     123)
         } else {
-            startActivity(Intent(Intent.ACTION_CALL).setData(Uri.parse("tel:256785077853")))
+            startActivity(Intent(Intent.ACTION_CALL).setData(Uri.parse("tel:$phone")))
         }
     }
 
@@ -87,7 +89,7 @@ class CallUser : AppCompatActivity() {
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
         when (requestCode) {
             123 -> if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                onCall()
+                onCall(phoneNumber!!)
             } else {
                 Log.d("TAG", "Call Permission Not Granted")
             }

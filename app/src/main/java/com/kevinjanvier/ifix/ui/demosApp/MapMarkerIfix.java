@@ -32,7 +32,7 @@ import java.util.Random;
  * Created by kevinjanvier on 22/11/2017.
  */
 
-public class MapMarkerIfix extends BaseDemoActivity implements ClusterManager.OnClusterClickListener<Person>, ClusterManager.OnClusterInfoWindowClickListener<Person>, ClusterManager.OnClusterItemClickListener<Person>, ClusterManager.OnClusterItemInfoWindowClickListener<Person> {
+public class MapMarkerIfix extends MapAdapter implements ClusterManager.OnClusterClickListener<Person>, ClusterManager.OnClusterInfoWindowClickListener<Person>, ClusterManager.OnClusterItemClickListener<Person>, ClusterManager.OnClusterItemInfoWindowClickListener<Person> {
     private ClusterManager<Person> mClusterManager;
     private Random mRandom = new Random(1984);
 
@@ -66,7 +66,7 @@ public class MapMarkerIfix extends BaseDemoActivity implements ClusterManager.On
         protected void onBeforeClusterItemRendered(Person person, MarkerOptions markerOptions) {
             // Draw a single person.
             // Set the info window to show their name.
-            
+
 
             mImageView.setImageResource(person.profilePhoto);
             Bitmap icon = mIconGenerator.makeIcon();
@@ -158,7 +158,7 @@ public class MapMarkerIfix extends BaseDemoActivity implements ClusterManager.On
 
     @Override
     protected void startDemo() {
-        getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(51.503186, -0.126446), 9.5f));
+        getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(0.347596, 32.582520), 12.5f));
 
         mClusterManager = new ClusterManager<Person>(this, getMap());
         mClusterManager.setRenderer(new PersonRenderer());
@@ -187,8 +187,7 @@ public class MapMarkerIfix extends BaseDemoActivity implements ClusterManager.On
     }
 
     private LatLng position() {
-        return new LatLng(random(51.6723432, 51.38494009999999), random(0.148271, -0.3514683));
-//        return new LatLng( 0.329183, 32.570988);
+        return new LatLng(random(0.329183, 0.3834752), random(32.61644090000004, 32.552526599999965));
 
     }
 
