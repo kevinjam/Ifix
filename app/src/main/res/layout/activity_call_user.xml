@@ -9,22 +9,18 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <ImageView
-            android:id="@+id/header_cover_image"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            android:scaleType="centerCrop" />
+            />
+
+
 
         <ImageView
             android:id="@+id/user_profile_photo"
             android:layout_width="140dp"
             android:layout_height="140dp"
-            android:layout_below="@+id/header_cover_image"
+            android:layout_below="@+id/toolbar"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="-60dp"
             android:elevation="5dp"
             android:padding="20dp"
             android:scaleType="centerCrop"
@@ -33,8 +29,8 @@
         <RelativeLayout
             android:id="@+id/profile_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/header_cover_image"
+            android:layout_height="220dp"
+            android:layout_below="@+id/toolbar"
             android:background="@color/colorPrimary"
             android:paddingBottom="24dp">
 
@@ -63,11 +59,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="76dp"
                 android:text="Bridget"
                 android:textColor="@color/white"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginTop="120dp"
+     />
 
             <TextView
                 android:id="@+id/et_phoneNumber"
@@ -94,7 +91,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:background="#fff"
-                android:clickable="true"
                 android:elevation="4dp"
                 android:padding="20dp"
                 android:text="Android Profile UI Design" />

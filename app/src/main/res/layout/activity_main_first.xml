@@ -38,20 +38,6 @@
         android:layout_marginBottom="@dimen/space40">
 
         <Button
-            android:id="@+id/btn_sign_up"
-            android:layout_width="@dimen/space250"
-            android:layout_height="@dimen/space50"
-            android:layout_marginBottom="@dimen/space20"
-            android:text="Sign Up"
-            android:textAllCaps="false"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/txt16"
-            android:background="@drawable/bg_btn_white"/>
-
-        <!--android:background="@drawable/btn_white_selector"-->
-
-
-        <Button
             android:id="@+id/btn_sign_in"
             android:layout_width="@dimen/space250"
             android:layout_height="@dimen/space50"
@@ -60,10 +46,21 @@
             android:textAllCaps="false"
             android:textColor="@android:color/black"
             android:textSize="@dimen/txt16"
-        android:background="@drawable/bg_btn_purple"
-        />
+            android:background="@drawable/bg_btn_purple"
+            />
 
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="@dimen/space250"
+            android:layout_height="@dimen/space50"
+            android:layout_marginBottom="@dimen/space20"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txt16"
+            android:background="@drawable/bg_btn_white"/>
 
+        <!--android:background="@drawable/btn_white_selector"-->
 
         <TextView
             android:layout_width="match_parent"

@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.kevinjanvier.ifix.ui.Login">
-
     <com.flaviofaria.kenburnsview.KenBurnsView
         android:id="@+id/image"
         android:layout_width="match_parent"
@@ -57,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/ll_bottom"
         android:layout_below="@id/iv_back"
-        android:layout_marginTop="@dimen/space40"
+        android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:paddingLeft="@dimen/space20"
@@ -69,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/iv_back"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="@dimen/space40"
+            android:layout_marginBottom="@dimen/space16"
             android:text="Login"
             android:textColor="@android:color/white"
             android:textSize="@dimen/txt22" />

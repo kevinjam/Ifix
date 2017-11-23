@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.LinearLayout
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.Task
@@ -25,6 +26,7 @@ class Signup : AppCompatActivity() {
 
     lateinit var FirstName: EditText
     lateinit var Username: EditText
+    lateinit var iv_back:ImageView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,6 +44,13 @@ class Signup : AppCompatActivity() {
 
         btnSignUp = findViewById(R.id.btn_sign_up)
         goSign = findViewById(R.id.go_signin)
+
+        iv_back = findViewById(R.id.iv_back)
+        iv_back.setOnClickListener {
+            val intent = Intent(this, Login::class.java)
+            startActivity(intent)
+        }
+
 
         btnSignUp.setOnClickListener {
             val dialog = indeterminateProgressDialog(message = "Please wait…", title = "User Login")

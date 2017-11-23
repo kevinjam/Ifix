@@ -31,21 +31,20 @@ class CallUser : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_call_user)
 
-        utility = Utility(this@CallUser)
-
-        username = findViewById(R.id.user_profile_name)
-        userPhone = findViewById(R.id.et_phoneNumber)
         toolbar = findViewById(R.id.toolbar)
-        btnCont = findViewById(R.id.btn_continue)
-
-        toolbar = findViewById(R.id.toolbar)
-        toolbar.title = "User"
+        toolbar.title = "User Profile"
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back_white_24dp)
         toolbar.setOnClickListener {
             val intent = Intent(this, MapMarkerIfix::class.java)
             startActivity(intent)
         }
 
+        utility = Utility(this@CallUser)
+
+        username = findViewById(R.id.user_profile_name)
+        userPhone = findViewById(R.id.et_phoneNumber)
+        toolbar = findViewById(R.id.toolbar)
+        btnCont = findViewById(R.id.btn_continue)
 
 
 

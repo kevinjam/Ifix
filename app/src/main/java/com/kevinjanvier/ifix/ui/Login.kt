@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatDialog
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import com.kevinjanvier.ifix.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -25,6 +26,7 @@ class Login : AppCompatActivity() {
     lateinit var username: EditText
     lateinit var password: EditText
     lateinit var utility:Utility
+    lateinit var iv_back:ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,10 +39,15 @@ class Login : AppCompatActivity() {
         btnSign = findViewById(R.id.btn_sign_in)
         username = findViewById(R.id.et_username)
         password = findViewById(R.id.et_password)
+        iv_back = findViewById(R.id.iv_back)
+        iv_back.setOnClickListener {
+            val intent = Intent(this, Signup::class.java)
+            startActivity(intent)
+        }
 
         btnSign.setOnClickListener {
 
-            val dialog = indeterminateProgressDialog(message = "Please wait…", title = "User Login")
+            val dialog = indeterminateProgressDialog(message = "Please wait…", title = "Login ...")
 
             val username: String = username.text.toString()
             val password: String = password.text.toString()
