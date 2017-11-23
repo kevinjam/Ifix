@@ -93,7 +93,7 @@
                 android:background="#fff"
                 android:elevation="4dp"
                 android:padding="20dp"
-                android:text="Android Profile UI Design" />
+                android:text="Software programmer who is passionate about funtional programming and is also very good and expereinced in Python Programming" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -105,7 +105,7 @@
                 android:clickable="true"
                 android:elevation="4dp"
                 android:padding="20dp"
-                android:text="Android Profile XMl UI Design" />
+                android:text="Likes to play board games, reading novels and hanging out with fellow wired people like her." />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -117,7 +117,7 @@
                 android:clickable="true"
                 android:elevation="4dp"
                 android:padding="20dp"
-                android:text="Android Profile XMl UI Design" />
+                android:text="she is ready to provide service at your order." />
 
             <Button
                 android:id="@+id/btn_continue"

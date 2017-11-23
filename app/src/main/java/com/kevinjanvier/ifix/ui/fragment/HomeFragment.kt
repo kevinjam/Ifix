@@ -179,13 +179,18 @@ class HomeFragment : Fragment() {
     private val listItemData: List<Categories> get() {
         val addArrayList = ArrayList<Categories>()
         addArrayList.add(Categories("Book Ticket", R.drawable.ticket, "Concert Ticket", "Movie Ticket", "Travel Ticket"))
-        addArrayList.add(Categories("Transport", R.drawable.trucking,"dumy", "dumy", "Travel Ticket"))
-        addArrayList.add(Categories("Help", R.drawable.ic_help,"dumy", "dumy", "Travel Ticket"))
-        addArrayList.add(Categories("Entertainment", R.drawable.juggler,"dumy", "dumy", "Travel Ticket"))
-        addArrayList.add(Categories("Shopping", R.drawable.cart,"dumy", "dumy", "Travel Ticket"))
-        addArrayList.add(Categories("Flexing", R.drawable.flexing,"dumy", "dumy", "Travel Ticket"))
-        addArrayList.add(Categories("Cars", R.drawable.car,"dumy", "dumy", "Travel Ticket"))
-        addArrayList.add(Categories("Cinemae", R.drawable.popcorn,"dumy", "dumy", "Travel Ticket"))
+        addArrayList.add(Categories("Transport", R.drawable.trucking,"Pick and deliver any package from anywhere",
+                "This involves any kind of transportation within and anywhere around any geographical locations around Uganda ", "All regions, all districts"))
+        addArrayList.add(Categories("Help", R.drawable.ic_help,"Avail a baby sitter", "Avail a house helper for a night to look after your loved ones",
+                "Avail someone to touch up your office, home, hostel room and others."))
+        addArrayList.add(Categories("Entertainment", R.drawable.juggler,"The joker to update your gallery with games", "Update your gallery with movies", "Update your gallery with documentaries"))
+        addArrayList.add(Categories("Shopping", R.drawable.cart,"Do your shopping for you", "Online", "Offline"))
+        addArrayList.add(Categories("Flexing", R.drawable.flexing,"Grocery shopping downtown", "Shoe shopping downtown",
+                "Stuff getting from Owino"))
+        addArrayList.add(Categories("Cars", R.drawable.car,"Pick your loved ones and deliver them safely from/to school",
+                "Pick and deliver your loved ones from/to the airport", "Pick and deliver your loved ones from/to the bar"))
+        addArrayList.add(Categories("Queues", R.drawable.popcorn,"Queue for you at the bank", "Queue for at the food court",
+                "Queue for you at the bar"))
 
         return addArrayList
     }

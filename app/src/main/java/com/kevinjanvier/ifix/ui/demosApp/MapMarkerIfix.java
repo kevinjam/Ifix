@@ -177,14 +177,18 @@ public class MapMarkerIfix extends MapAdapter implements ClusterManager.OnCluste
 
     private void addItems() {
         mClusterManager.addItem(new Person(position(), "Bridget", R.drawable.ic_user_two, "0785077853"));
-        mClusterManager.addItem(new Person(position(), "Gran", R.drawable.ic_profile,"0785077853"));
-        mClusterManager.addItem(new Person(position(), "Ruth", R.drawable.ic_profile,"0785077853"));
-        mClusterManager.addItem(new Person(position(), "Stefan", R.drawable.ic_user_two,"0785077853"));
-        mClusterManager.addItem(new Person(position(), "Mechanic", R.drawable.ic_profile,"0785077853"));
-        mClusterManager.addItem(new Person(position(), "Yeats", R.drawable.ic_profile, "0785077853"));
-        mClusterManager.addItem(new Person(position(), "John", R.drawable.ic_user_two,"0785077853"));
-        mClusterManager.addItem(new Person(position(), "Trevor the Turtle", R.drawable.ic_profile,"0785077853"));
-        mClusterManager.addItem(new Person(position(), "Teach", R.drawable.ic_profile_user,"0785077853"));
+        mClusterManager.addItem(new Person(position(), "Pixie", R.drawable.ic_user_two,"0703961918"));
+        mClusterManager.addItem(new Person(position(), "Kiyimba", R.drawable.ic_user_two,"0751468958"));
+        mClusterManager.addItem(new Person(position(), "Drake", R.drawable.ic_user_two,"0776844343"));
+        mClusterManager.addItem(new Person(position(), "Samantha", R.drawable.ic_user_two,"0777704340"));
+        mClusterManager.addItem(new Person(position(), "Micheal", R.drawable.ic_user_two, "0701687145"));
+        mClusterManager.addItem(new Person(position(), "Kevin", R.drawable.ic_user_two,"0702469195"));
+        mClusterManager.addItem(new Person(position(), "The guy", R.drawable.ic_user_two,"0752553629"));
+        mClusterManager.addItem(new Person(position(), "Ema", R.drawable.ic_profile_user,"0781494102"));
+        mClusterManager.addItem(new Person(position(), "Mbabali", R.drawable.ic_profile_user,"0792720722"));
+        mClusterManager.addItem(new Person(position(), "Mark", R.drawable.ic_profile_user,"0793812267"));
+        mClusterManager.addItem(new Person(position(), "David", R.drawable.ic_profile_user,"0750572742"));
+
     }
 
     private LatLng position() {
