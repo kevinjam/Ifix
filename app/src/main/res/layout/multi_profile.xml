@@ -19,7 +19,8 @@
         android:paddingLeft="@dimen/space2"
         android:paddingRight="@dimen/space2"
         android:layout_gravity="center"
-        android:alpha=".8"/>
+        android:alpha=".8"
+        android:text="|"/>
 
     <TextView
         android:layout_width="wrap_content"
