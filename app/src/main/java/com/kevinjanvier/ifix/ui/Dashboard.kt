@@ -42,7 +42,7 @@ class Dashboard : AppCompatActivity() {
         tablayout.getTabAt(1)!!.setIcon(tabIcon[1])
         tablayout.getTabAt(2)!!.setIcon(tabIcon[2])
         tablayout.getTabAt(3)!!.setIcon(tabIcon[3])
-        tablayout.getTabAt(4)!!.setIcon(tabIcon[4])
+//        tablayout.getTabAt(4)!!.setIcon(tabIcon[4])
 
 
     }
@@ -50,7 +50,7 @@ class Dashboard : AppCompatActivity() {
     private fun setupViewpager(viewpager: ViewPager?) {
         val adapter = TabAdapter(supportFragmentManager)
         adapter.addfragment(HomeFragment(), "Home")
-        adapter.addfragment(SearchFragment(), "Search")
+//        adapter.addfragment(SearchFragment(), "Search")
         adapter.addfragment(AddServiceFragment(), "Add Item")
         adapter.addfragment(AboutFragment(), "About")
         adapter.addfragment(ProfileFragment(), "Profile")

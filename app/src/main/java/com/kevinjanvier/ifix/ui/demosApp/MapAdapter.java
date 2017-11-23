@@ -14,6 +14,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.kevinjanvier.ifix.R;
 import com.kevinjanvier.ifix.ui.CategoryMore;
+import com.kevinjanvier.ifix.ui.Dashboard;
 
 public abstract class MapAdapter extends FragmentActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
@@ -34,7 +35,7 @@ public abstract class MapAdapter extends FragmentActivity implements OnMapReadyC
         toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MapAdapter.this, CategoryMore.class);
+                Intent intent = new Intent(MapAdapter.this, Dashboard.class);
                 startActivity(intent);
             }
         });

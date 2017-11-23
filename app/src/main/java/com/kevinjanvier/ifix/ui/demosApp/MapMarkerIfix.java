@@ -32,7 +32,8 @@ import java.util.Random;
  * Created by kevinjanvier on 22/11/2017.
  */
 
-public class MapMarkerIfix extends MapAdapter implements ClusterManager.OnClusterClickListener<Person>, ClusterManager.OnClusterInfoWindowClickListener<Person>, ClusterManager.OnClusterItemClickListener<Person>, ClusterManager.OnClusterItemInfoWindowClickListener<Person> {
+public class MapMarkerIfix extends MapAdapter implements ClusterManager.OnClusterClickListener<Person>,
+        ClusterManager.OnClusterInfoWindowClickListener<Person>, ClusterManager.OnClusterItemClickListener<Person>, ClusterManager.OnClusterItemInfoWindowClickListener<Person> {
     private ClusterManager<Person> mClusterManager;
     private Random mRandom = new Random(1984);
 
